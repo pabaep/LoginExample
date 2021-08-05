@@ -116,6 +116,7 @@ public class JoinActivity extends AppCompatActivity {
             public void onFailure(Call<JoinResponse> call, Throwable t) {
                 Toast.makeText(JoinActivity.this, "회원가입 에러 발생", Toast.LENGTH_SHORT).show();
                 Log.e("회원가입 에러 발생", t.getMessage());
+                t.printStackTrace();
                 showProgress(false);
             }
         });

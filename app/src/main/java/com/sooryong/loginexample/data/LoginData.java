@@ -3,14 +3,14 @@ package com.sooryong.loginexample.data;
 import com.google.gson.annotations.SerializedName;
 
 public class LoginData {
-    @SerializedName("userEmail")
-    String userEmail;
+    @SerializedName("email")
+    String email;
 
-    @SerializedName("userPwd")
-    String userPwd;
+    @SerializedName("password")
+    String password;
 
-    public LoginData(String userEmail, String userPwd) {
-        this.userEmail = userEmail;
-        this.userPwd = userPwd;
+    public LoginData(String email, String password) {
+        this.email = email;
+        this.password = password;
     }
 }
